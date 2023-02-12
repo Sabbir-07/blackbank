@@ -15,7 +15,7 @@ if(email==="sabbir@gmail.com"&& password==="secret"){
     window.location.href="bank.html"
 }
 else{
-    console.log("invalid user");
+    alert("invalid user");
 }
 
 });

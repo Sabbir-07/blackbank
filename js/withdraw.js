@@ -36,8 +36,13 @@ document.getElementById("withdraw-button").addEventListener("click",function(){
     const balanceTotalElement=document.getElementById("balance-total");
     const previousBalanceTotalString=balanceTotalElement.innerText;
     const previousBalanceTotal=parseFloat(previousBalanceTotalString);
-    console.log(previousBalanceTotalString);
+   
     
+    if(newWithdrawAmount>previousBalanceTotal)
+    {
+        alert("Sabbir er Bank Ato Taka Nai");
+        return;
+    }
 
     // //step-7
     const newBalanceTotal=previousBalanceTotal-newWithdrawAmount;
